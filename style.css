@@ -1,0 +1,161 @@
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0b1 | 201101 
+    NOTE:WORK IN PROGRESS
+    USE WITH CAUTION AND TEST WITH ABANDON */
+
+html,body,div,span,applet,object,iframe, h1,h2,h3,h4,h5,h6,p,blockquote,pre, a,abbr,acronym,address,big,cite,code, del,dfn,em,img,ins,kbd,q,s,samp, small,strike,strong,sub,sup,tt,var, b,u,i,center, dl,dt,dd,ol,ul,li, fieldset,form,label,legend, table,caption,tbody,tfoot,thead,tr,th,td, article,aside,canvas,details,figcaption,figure, footer,header,hgroup,menu,nav,section,summary, time,mark,audio,video{ margin:0; padding:0; border:0; outline:0; font-size:100%; font:inherit; vertical-align:baseline; } /* HTML5 display-role reset for older browsers */ article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section{ display:block; } body{ line-height:1; } ol,ul{ list-style:none; } blockquote,q{ quotes:none; } blockquote:before,blockquote:after, q:before,q:after{ content:’’; content:none; }
+/* remember to define visible focus styles! 
+:focus{
+    outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:line-through;
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+/* GO! */
+
+@font-face {
+  font-family: "Agrandir Variable", sans-serif;
+  src: url("AgrandirVariable.ttf");
+}
+
+:root {
+  --accent-colour: blue;
+  --accent-light: #9a1412;
+  --bg-colour: #FFF;
+  --main-font: Agrandir Variable;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 12px;
+    color: #190C26;
+}
+
+header {
+    position:relative;
+    padding: 25vh 25vw;
+    margin: auto;
+}
+
+h1 {
+    font-size: 7rem;
+    text-align: center;
+    color: var(--accent-colour);
+    -webkit-text-stroke: 2px var(--accent-colour);
+    z-index: 2;
+    font-stretch: ultra-expanded; 
+    font-weight: 400;
+}
+
+h1 span {
+    position: relative;
+}
+
+h1 span:not(:first-child) {
+    color: transparent;
+    display: block;
+    margin-top: -4.6rem;
+}
+
+h2 {
+   margin-top: 2rem;
+   text-align: center;
+   font-size: 2.5rem;
+   font-variation-settings: "wght" 600, "wdth" 100;
+}
+
+header{
+}
+
+.header-video {
+    padding: 2rem;
+    width: calc(100vw - 4rem);
+    filter: darken(1);
+}
+
+h3 {
+    font-size: 2rem;
+    font-variation-settings: "wght" 400, "wdth" 50;
+    color: var(--accent-colour);
+}
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-variation-settings: "wght" 100, "wdth" 200;
+    color: var(--accent-light);
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    max-width: 30rem;
+    padding: 2rem 0;
+    line-height: 1.3;
+}
+
+button {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    border: 2px solid var(--accent-light);
+    padding: 0.5rem 2rem;
+    background: var(--bg-colour);
+    font-weight: 800;
+    font-stretch: ultra-expanded; 
+    color: var(--accent-light);
+    font-family: var(--main-font);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--accent-light);
+    color: var(--bg-colour);
+}
+
+section {
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+section.what {
+    margin-left: 5rem;
+    max-width: 35rem;
+    margin-top: -5rem;
+    background: var(--bg-colour);
+    position: relative;
+    z-index: 2;
+}
+
+section.solo {
+    float:right;
+    margin-right: 4rem;
+}
+
+section.group {
+    margin-left: 5rem;
+}
+
+section.about {
+    float:right;
+    text-align: right;
+    margin-right: 4rem;
+}
