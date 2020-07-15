@@ -32,8 +32,8 @@ table{
 /* GO! */
 
 @font-face {
-  font-family: "Agrandir Variable", sans-serif;
-  src: url("AgrandirVariable.ttf");
+  font-family: "Agrandir Variable";
+  src: url(AgrandirVariable.ttf) format("truetype");
 }
 
 :root {
@@ -44,7 +44,7 @@ table{
 }
 
 body {
-    font-family: var(--main-font);
+    font-family: var(--main-font), sans-serif;
     font-size: 12px;
     color: #190C26;
     max-width: 1200px;
